@@ -15,7 +15,7 @@ device.name2=RMX1971CN
 device.name3=RMX1971EX
 device.name4=
 device.name5=
-supported.versions=
+supported.versions=10-11
 supported.patchlevels=
 '; } # end properties
 

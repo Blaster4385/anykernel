@@ -13,6 +13,9 @@ device.name1=RMX1851
 device.name2=rmx1851
 device.name3=Realme 3 Pro
 device.name4=realme 3 pro
+device.name5=RMX1971
+device.name6=RMX1971CN
+device.name7=RMX1971EX
 supported.versions=10-11
 '; } # end properties
 

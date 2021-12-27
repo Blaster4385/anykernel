@@ -16,7 +16,7 @@ device.name4=realme 3 pro
 device.name5=RMX1971
 device.name6=RMX1971CN
 device.name7=RMX1971EX
-supported.versions=10-11
+supported.versions=10-12
 '; } # end properties
 
 # shell variables

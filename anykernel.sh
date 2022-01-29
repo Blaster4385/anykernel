@@ -4,24 +4,28 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=IllusionX-v7.5
+kernel.string=IllusionX by TheTablaster
 do.devicecheck=1
 do.modules=0
+do.systemless=1
 do.cleanup=1
-do.cleanuponabort=1
-device.name1=RMX1851
-device.name2=rmx1851
-device.name3=Realme 3 Pro
-device.name4=realme 3 pro
-device.name5=RMX1971
-device.name6=RMX1971CN
-device.name7=RMX1971EX
-supported.versions=10-12
+do.cleanuponabort=0
+device.name1=instantnoodle
+device.name2=instantnoodlep
+device.name3=instantnoodlev
+device.name4=kebab
+device.name5=OnePlus8
+device.name6=OnePlus8Pro
+device.name7=OnePlus8T
+device.name8=lemonades
+device.name9=OnePlus9R
+supported.versions=
+supported.patchlevels=
 '; } # end properties
 
 # shell variables
-block=/dev/block/bootdevice/by-name/boot;
-is_slot_device=0;
+block=boot;
+is_slot_device=1;
 ramdisk_compression=auto;
 
 
@@ -29,18 +33,8 @@ ramdisk_compression=auto;
 # import patching functions/variables - see for reference
 . tools/ak3-core.sh;
 
-
-## AnyKernel file attributes
-# set permissions/ownership for included ramdisk files
-set_perm_recursive 0 0 755 644 $ramdisk/*;
-set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
-
-
 ## AnyKernel install
 dump_boot;
-
-# begin ramdisk changes
-# end ramdisk changes
 
 write_boot;
 ## end install
